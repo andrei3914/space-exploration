@@ -1,0 +1,129 @@
+@import '../../breakpoints.scss';
+
+.navigation {
+    width: 100%;
+    height: 5rem;
+    margin-bottom: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.3rem;
+
+    .nav-logo {
+        margin-left: 1.2rem;
+        margin-top: 1rem;
+        font-size: 2rem;
+
+        @include up($sm) {
+            margin-top: 0.1rem;
+        }
+
+        @include up($lg) {
+            margin-top: 2rem;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .mobile-nav-toggle {
+        display: block;
+        position: absolute;
+        z-index: 9999;
+
+        background-color: transparent;
+
+        width: 2rem;
+        height: 2rem;
+        top: 2rem;
+        right: 2rem;
+
+        border: 0;
+
+        @include up($sm) {
+            display: none;
+        }
+    }
+
+    .primary-navigation {
+        list-style-type: none;
+        gap: 2rem;
+
+        position: fixed;
+        z-index: 1000;
+        min-height: 100%;
+        margin-top: 0;
+        inset: 0 0 0 30%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: min(30vh, 10rem) 2rem;
+
+        background-color: hsl(0 0% 0% / 0.5);
+
+        transform: translateX(100%);
+        transition: transform 350ms ease-out;
+
+        &[data-visible="true"] {
+            transform: translateX(0%);
+        }
+
+        span {
+            margin-right: 0.4rem;
+            font-weight: 800;
+        }
+
+        @include up($sm) {
+            all: initial;
+
+            color: white;
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 1.3rem;
+
+            display: flex;
+            margin-top: -0.3rem;
+            padding: 1.5rem 2.5rem 1.5rem 2.5rem;
+            gap: 3rem;
+            list-style-type: none;
+
+            background-color: rgba(0, 0, 0, 0.6);
+
+            span {
+                display: none;
+            }
+        }
+
+        @include up($lg) {
+            all: initial;
+
+            color: white;
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 1.3rem;
+
+            margin-top: 2rem;
+            padding: 1.5rem 10rem 1.5rem 10rem;
+            display: flex;
+            gap: 4rem;
+
+            list-style-type: none;
+
+            background-color: rgba(0, 0, 0, 0.6);
+
+            span {
+                display: inline-block;
+            }
+        }
+    }
+
+    @supports (backdrop-filter: blur(1rem)) {
+        .primary-navigation {
+            background: hsl(0 0% 100% / 0.1);
+            backdrop-filter: blur(1rem);
+        }
+    }
+}
