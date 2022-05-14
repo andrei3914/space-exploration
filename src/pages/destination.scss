@@ -35,27 +35,6 @@
             }
         }
 
-        .destination-title {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            font-family: 'Barlow Condensed', sans-serif;
-
-            @include up($sm) {
-                font-size: 1.4rem;
-                align-self: flex-start;
-            }
-
-            @include up($lg) {
-                font-size: 1.7rem;
-            }
-
-            span {
-                font-weight: 700;
-                margin-inline: 1rem;
-                color: rgba(255, 255, 255, 0.5);
-            }
-        }
-
         .img-container,
         .info-container {
             display: flex;

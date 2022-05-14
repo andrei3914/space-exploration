@@ -1,0 +1,162 @@
+@import '../breakpoints.scss';
+
+.crew-container {
+    width: 100%;
+    min-height: 100vh;
+
+    background-image: url('../assets/crew/background-crew-mobile.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include up($sm) {
+        background-image: url('../assets/crew/background-crew-tablet.jpg');
+    }
+
+    @include up($lg) {
+        background-image: url('../assets/crew/background-crew-desktop.jpg');
+    }
+
+    .crew-body {
+        padding: 0 2rem 2rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @include up($lg) {
+            padding: 3rem 7rem 7rem 7rem;
+        }
+
+        .crew-content {
+            @include up($sm) {
+                display: flex;
+                flex-direction: column-reverse;
+                margin-top: 2rem;
+            }
+
+            @include up($lg) {
+                flex-direction: row-reverse;
+            }
+        }
+
+        .img-container {
+            img {
+                max-height: 250px;
+                position: relative;
+                bottom: -7px;
+
+                @include up($sm) {
+                    position: absolute;
+                    bottom: 0;
+                    max-height: 450px;
+                }
+
+                @include up($lg) {
+                    max-height: 100%;
+                }
+            }
+
+            hr {
+                width: 100%;
+                opacity: 0.3;
+
+                @include up($sm) {
+                    display: none;
+                }
+            }
+        }
+
+        .img-container,
+        .info-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        .info-container {
+            position: relative;
+            @include up($sm) {
+                flex-direction: column-reverse;
+                width: 70%;
+                margin: 0 auto;
+            }
+
+            @include up($lg) {
+                margin-top: 15rem;
+                max-height: 100%;
+            }
+        }
+
+        ul {
+            display: flex;
+            list-style-type: none;
+            gap: 1rem;
+            padding-left: 0;
+            margin-block: 1.5rem;
+
+            @include up($lg) {
+                align-self: flex-start;
+                position: absolute;
+                bottom: -70px;
+            }
+
+            button {
+                width: 12px;
+                height: 12px;
+                border: 0px solid transparent;
+                border-radius: 50%;
+                background-color: rgba(255, 255, 255, 0.4);
+                
+                &:hover,
+                &:active {
+                    background-color: white;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .crew-position {
+            opacity: 0.6;
+            text-transform: uppercase;
+            font-size: 1rem;
+            text-align: center;
+
+            @include up($sm) {
+                font-size: 1.5rem;
+            }
+
+            @include up($lg) {
+                font-size: 2rem;
+                text-align: left;
+            }
+        }
+
+        .crew-name {
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            text-align: center;
+            margin-top: 0.5rem;
+            margin-bottom: 1.2rem;
+
+            @include up($sm) {
+                font-size: 3rem;
+            }
+
+            @include up($lg) {
+                font-size: 4rem;
+                text-align: left;
+            }
+        }
+
+        .crew-description {
+            text-align: center;
+            opacity: 0.8;
+
+            @include up($lg) {
+                text-align: left;
+            }
+        }
+    }
+}

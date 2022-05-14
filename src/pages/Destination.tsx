@@ -17,7 +17,7 @@ const Destination = () => {
     <div className='destination-container'>
       <Navigation />
       <div className='destination-body'>
-        <h1 className='destination-title'><span>01</span> PICK YOUR DESTINATION </h1>
+        <h1 className='page-title'><span>01</span> PICK YOUR DESTINATION </h1>
         <div className="destination-content">
           <div className='img-container'>
             <img src={
