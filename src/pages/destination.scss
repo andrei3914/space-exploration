@@ -1,0 +1,185 @@
+@import '../breakpoints.scss';
+
+.destination-container {
+    width: 100%;
+    min-height: 100vh;
+
+    background-image: url('../assets/destination/background-destination-mobile.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include up($sm) {
+        background-image: url('../assets/destination/background-destination-tablet.jpg');
+    }
+
+    @include up($lg) {
+        background-image: url('../assets/destination/background-destination-desktop.jpg');
+    }
+
+    .destination-body {
+        padding: 0 2rem 2rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @include up($lg) {
+            padding: 3rem 7rem 7rem 7rem;
+        }
+
+        .destination-content {
+            @include up($lg) {
+                display: flex;
+                margin-top: 2rem;
+            }
+        }
+
+        .destination-title {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            font-family: 'Barlow Condensed', sans-serif;
+
+            @include up($sm) {
+                font-size: 1.4rem;
+                align-self: flex-start;
+            }
+
+            @include up($lg) {
+                font-size: 1.7rem;
+            }
+
+            span {
+                font-weight: 700;
+                margin-inline: 1rem;
+                color: rgba(255, 255, 255, 0.5);
+            }
+        }
+
+        .img-container,
+        .info-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        .info-container {
+            @include up($lg) {
+                align-items: flex-start;
+            }
+        }
+
+        img {
+            width: 50%;
+
+            @include up($sm) {
+                margin-bottom: 2rem;
+            }
+
+            @include up($lg) {
+                width: 70%;
+                margin-bottom: 0;
+            }
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            gap: 2rem;
+            padding-left: 0;
+
+            color: rgba(255, 255, 255, 0.7);
+            font-weight: 700;
+            text-transform: uppercase;
+            font-family: 'Barlow Condensed', sans-serif;
+
+            @include up($sm) {
+                font-size: 1.2rem;
+                gap: 2.5rem;
+            }
+
+            li {
+                padding-bottom: 0.4rem;
+                border-bottom: 2px solid transparent;
+
+                @include up($sm) {
+                    padding-bottom: 0.6rem;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                    border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+                }
+            }
+        }
+
+        .destination-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @include up($sm) {
+                width: 85%;
+            }
+
+            @include up($lg) {
+                width: 70%;
+                align-items: flex-start;
+            }
+
+            .info-title {
+                margin-bottom: 0;
+                text-transform: uppercase;
+                font-size: 3.5rem;
+                font-family: 'Bellefair', serif;
+
+                @include up($sm) {
+                    font-size: 4.5rem;
+                }
+
+                @include up($lg) {
+                    font-size: 7rem;
+                }
+            }
+
+            .info-content {
+                text-align: center;
+
+                @include up($lg) {
+                    text-align: left;
+                    margin-bottom: 3rem;
+                }
+            }
+
+            hr {
+                background-color: white;
+                opacity: 0.2;
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+
+            .info-footer {
+                text-align: center;
+
+                @include up($sm) {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-around;
+                }
+
+                @include up($lg) {
+                    justify-content: flex-start;
+                    gap: 5rem;
+                }
+            }
+
+            h5 {
+                margin-block: 0.5rem;
+                text-transform: uppercase;
+                opacity: 0.6;
+            }
+        }
+    }
+
+}

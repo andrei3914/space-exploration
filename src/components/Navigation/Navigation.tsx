@@ -37,19 +37,27 @@ const Navigation = () => {
 
             <ul className='primary-navigation' id='primary-navigation'
                 data-visible={visibility}>
-                <li><NavLink className='link' to='/'>
+                <li><NavLink
+                    className={({ isActive }) => 'link' + (isActive ? " selected" : "")}
+                    to='/'>
                     <span aria-hidden='true'>00</span>HOME
                 </NavLink>
                 </li>
-                <li><NavLink className='link' to='/destination'>
+                <li><NavLink
+                    className={({ isActive }) => 'link' + (isActive ? " selected" : "")}
+                    to='/destination'>
                     <span aria-hidden='true'>01</span>DESTINATION
                 </NavLink>
                 </li>
-                <li><NavLink className='link' to='/crew'>
+                <li><NavLink 
+                    className={({ isActive }) => 'link' + (isActive ? " selected" : "")}
+                    to='/crew'>
                     <span aria-hidden='true'>02</span>CREW
                 </NavLink>
                 </li>
-                <li><NavLink className='link' to='/technology'>
+                <li><NavLink
+                    className={({ isActive }) => 'link' + (isActive ? " selected" : "")}
+                    to='/technology'>
                     <span aria-hidden='true'>03</span>TECHNOLOGY
                 </NavLink>
                 </li>
