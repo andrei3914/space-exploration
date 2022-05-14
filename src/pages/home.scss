@@ -32,7 +32,7 @@
         @include up($lg) {
             padding: 2rem;
             flex-direction: row;
-            justify-content: space-around;
+            justify-content: space-between;
 
             margin-top: 20rem;
         }
