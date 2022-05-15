@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/space-exploration/static/css/main.8b6ac21c.css",
-    "main.js": "/space-exploration/static/js/main.bab2791e.js",
+    "main.css": "/space-exploration/static/css/main.8f9cbdba.css",
+    "main.js": "/space-exploration/static/js/main.3b00c8c1.js",
     "static/js/787.17adc471.chunk.js": "/space-exploration/static/js/787.17adc471.chunk.js",
     "static/media/background-home-desktop.jpg": "/space-exploration/static/media/background-home-desktop.cdf3864ecbfdf20e8c3b.jpg",
     "static/media/background-destination-desktop.jpg": "/space-exploration/static/media/background-destination-desktop.468b922c69bf5499b4bc.jpg",
@@ -9,13 +9,18 @@
     "static/media/background-home-tablet.jpg": "/space-exploration/static/media/background-home-tablet.bc9efcc3281fa6801077.jpg",
     "static/media/image-victor-glover.webp": "/space-exploration/static/media/image-victor-glover.1c271f99bab8b06d7ab5.webp",
     "static/media/image-douglas-hurley.webp": "/space-exploration/static/media/image-douglas-hurley.e4c7def427824ef543c0.webp",
+    "static/media/image-spaceport-portrait.jpg": "/space-exploration/static/media/image-spaceport-portrait.85523db5de13057f36ea.jpg",
     "static/media/background-crew-desktop.jpg": "/space-exploration/static/media/background-crew-desktop.88a3c692fd34eb311e04.jpg",
     "static/media/image-mark-shuttleworth.webp": "/space-exploration/static/media/image-mark-shuttleworth.665e198adc22fcdf7810.webp",
     "static/media/background-destination-tablet.jpg": "/space-exploration/static/media/background-destination-tablet.8f55d346d8b6cfd95ab7.jpg",
+    "static/media/background-technology-desktop.jpg": "/space-exploration/static/media/background-technology-desktop.b7b589b3c0c5ef0811d4.jpg",
     "static/media/image-europa.webp": "/space-exploration/static/media/image-europa.c3be32383f31d0f76d96.webp",
     "static/media/image-moon.webp": "/space-exploration/static/media/image-moon.b5a3c90e9c8eeb2cb68d.webp",
     "static/media/background-crew-tablet.jpg": "/space-exploration/static/media/background-crew-tablet.16d51cf61e98ce45eb61.jpg",
+    "static/media/image-space-capsule-portrait.jpg": "/space-exploration/static/media/image-space-capsule-portrait.dd0ac138afef98c1666a.jpg",
+    "static/media/image-launch-vehicle-portrait.jpg": "/space-exploration/static/media/image-launch-vehicle-portrait.0c758955a178bdcc3230.jpg",
     "static/media/background-home-mobile.jpg": "/space-exploration/static/media/background-home-mobile.13f7adecbcb3c3f170d8.jpg",
+    "static/media/background-technology-tablet.jpg": "/space-exploration/static/media/background-technology-tablet.48c38b028217ee0096c4.jpg",
     "static/media/image-mars.webp": "/space-exploration/static/media/image-mars.7f55f721b4a64b7a56a8.webp",
     "static/media/background-destination-mobile.jpg": "/space-exploration/static/media/background-destination-mobile.e0131e27e751ead1a922.jpg",
     "static/media/image-titan.webp": "/space-exploration/static/media/image-titan.80738bc61e5d1217a19a.webp",
@@ -23,12 +28,12 @@
     "static/media/logo.svg": "/space-exploration/static/media/logo.565f7f2c0534403f11b71994f4311210.svg",
     "static/media/icon-close.svg": "/space-exploration/static/media/icon-close.d47fda63cbd8b3fedbbc1b2a53f64470.svg",
     "static/media/icon-hamburger.svg": "/space-exploration/static/media/icon-hamburger.5273efa7c50e96ef3e51e7a2b54048ce.svg",
-    "main.8b6ac21c.css.map": "/space-exploration/static/css/main.8b6ac21c.css.map",
-    "main.bab2791e.js.map": "/space-exploration/static/js/main.bab2791e.js.map",
+    "main.8f9cbdba.css.map": "/space-exploration/static/css/main.8f9cbdba.css.map",
+    "main.3b00c8c1.js.map": "/space-exploration/static/js/main.3b00c8c1.js.map",
     "787.17adc471.chunk.js.map": "/space-exploration/static/js/787.17adc471.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8b6ac21c.css",
-    "static/js/main.bab2791e.js"
+    "static/css/main.8f9cbdba.css",
+    "static/js/main.3b00c8c1.js"
   ]
 }
