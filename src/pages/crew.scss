@@ -86,8 +86,8 @@
             }
 
             @include up($lg) {
-                margin-top: 15rem;
-                max-height: 100%;
+                top: -200px;
+                height: 700px;
             }
         }
 
