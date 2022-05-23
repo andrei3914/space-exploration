@@ -26,6 +26,7 @@
 
         @include up($lg) {
             padding: 3rem 7rem 7rem 7rem;
+            padding-bottom: 0;
         }
 
         .crew-content {
